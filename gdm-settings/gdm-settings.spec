@@ -1,5 +1,5 @@
 %global         forgeurl https://github.com/realmazharhussain/gdm-settings
-%global         uuid io.github.realmazharhuessain.GdmSettings
+%global         uuid io.github.realmazharhussain.GdmSettings
 %global tag v0.6
 Name:      gdm-settings
 Version:   0.6
