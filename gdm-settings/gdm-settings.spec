@@ -5,6 +5,7 @@ Name:      gdm-settings
 Version:   0.6
 Release:   %autorelease
 Summary:   A settings app for Gnome Login Manager (GDM)
+BuildArch: noarch
 
 %forgemeta
 
