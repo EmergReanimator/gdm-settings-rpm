@@ -63,6 +63,7 @@ desktop-file-validate %{buildroot}/%{_datadir}/applications/%{uuid}.desktop
 %doc README.md
 %{_bindir}/gdm-settings
 %{_datadir}/gdm-settings
+%{python3_sitelib}/gdm-settings
 %{_datadir}/metainfo/%{uuid}.appdata.xml
 %{_datadir}/applications/%{uuid}.desktop
 %{_datadir}/glib-2.0/schemas/%{uuid}*
