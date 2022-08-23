@@ -1,12 +1,13 @@
 %global         forgeurl https://github.com/realmazharhussain/gdm-settings
 %global         uuid io.github.realmazharhussain.GdmSettings
-%global tag v0.6
+
 Name:      gdm-settings
 Version:   0.6
 Release:   %autorelease
 Summary:   A settings app for Gnome Login Manager (GDM)
 BuildArch: noarch
 
+%global tag v%{version}
 %forgemeta
 
 License:   AGPL-3.0-or-later
@@ -21,7 +22,8 @@ BuildRequires:  pkgconfig(pygobject-3.0)
 BuildRequires:  pkgconfig(glib-2.0)
 BuildRequires:  desktop-file-utils
 BuildRequires:  libappstream-glib
-  
+BuildRequires:  python3-devel
+
 Requires: gdm
 Requires: polkit
 Requires: gettext
