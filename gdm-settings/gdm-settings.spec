@@ -53,7 +53,7 @@ With User Login Manager you can:
 
 
 %check
-#appstream-util validate-relax --nonet %{buildroot}%{_datadir}/metainfo/%{uuid}.metainfo.xml
+#appstream-util validate-relax --nonet %{buildroot}%{_datadir}/metainfo/%{uuid}.appdata.xml
 desktop-file-validate %{buildroot}/%{_datadir}/applications/%{uuid}.desktop
 
 
@@ -62,7 +62,7 @@ desktop-file-validate %{buildroot}/%{_datadir}/applications/%{uuid}.desktop
 %doc README.md
 %{_bindir}/gdm-settings
 %{_datadir}/gdm-settings
-%{_datadir}/metainfo/%{uuid}.metainfo.xml
+%{_datadir}/metainfo/%{uuid}.appdata.xml
 %{_datadir}/applications/%{uuid}.desktop
 %{_datadir}/glib-2.0/schemas/%{uuid}*
 %{_datadir}/icons/hicolor/*/*/*.svg
