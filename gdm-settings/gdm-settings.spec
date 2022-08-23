@@ -42,7 +42,7 @@ With User Login Manager you can:
 
 
 %build
-%meson
+%meson --buildtype=release
 %meson_build
 
 
@@ -58,7 +58,7 @@ desktop-file-validate %{buildroot}/%{_datadir}/applications/%{uuid}.desktop
 
 
 %files -f %{name}.lang
-%license LICENSE.md
+%license LICENSE
 %doc README.md
 %{_bindir}/gdm-settings
 %{_datadir}/gdm-settings
