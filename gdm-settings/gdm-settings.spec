@@ -1,8 +1,8 @@
 %global         forgeurl https://github.com/realmazharhussain/gdm-settings
 %global         uuid io.github.realmazharhusain.GdmSettings
-
+%global tag v0.6
 Name:      gdm-settings
-Version:   0.3.1
+Version:   0.6
 Release:   %autorelease
 Summary:   A settings app for Gnome Login Manager (GDM)
 
