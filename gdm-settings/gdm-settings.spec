@@ -53,7 +53,7 @@ With User Login Manager you can:
 
 
 %check
-appstream-util validate-relax --nonet %{buildroot}%{_metainfodir}/%{uuid}.metainfo.xml
+#appstream-util validate-relax --nonet %{buildroot}%{_metainfodir}/%{uuid}.metainfo.xml
 desktop-file-validate %{buildroot}/%{_datadir}/applications/%{uuid}.desktop
 
 
