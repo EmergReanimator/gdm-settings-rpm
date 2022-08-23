@@ -53,7 +53,7 @@ With User Login Manager you can:
 
 
 %check
-appstream-util validate-relax --nonet %{buildroot}%{_metainfodir}/%{uuid}.appdata.xml
+appstream-util validate-relax --nonet %{buildroot}%{_metainfodir}/%{uuid}.metainfo.xml
 desktop-file-validate %{buildroot}/%{_datadir}/applications/%{uuid}.desktop
 
 
@@ -61,7 +61,7 @@ desktop-file-validate %{buildroot}/%{_datadir}/applications/%{uuid}.desktop
 %license COPYING
 %doc README.md
 %{_bindir}/extension-manager
-%{_metainfodir}/%{uuid}.appdata.xml
+%{_metainfodir}/%{uuid}.metainfo.xml
 %{_datadir}/applications/%{uuid}.desktop
 %{_datadir}/glib-2.0/schemas/%{uuid}.gschema.xml
 %{_datadir}/icons/hicolor/*/*/*.svg
