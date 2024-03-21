@@ -1,8 +1,8 @@
-%global         forgeurl https://github.com/realmazharhussain/gdm-settings
-%global         uuid io.github.realmazharhussain.GdmSettings
+%global         forgeurl https://github.com/gdm-settings/gdm-settings
+%global         uuid io.github.gdm-settings.GdmSettings
 
 Name:      gdm-settings
-Version:   0.6
+Version:   4.3
 Release:   %autorelease
 Summary:   A settings app for Gnome Login Manager (GDM)
 BuildArch: noarch
@@ -11,21 +11,18 @@ BuildArch: noarch
 %forgemeta
 
 License:   AGPL-3.0-or-later
-URL:       https://github.com/realmazharhussain/gdm-settings
+URL:       %{forgeurl}
 Source0:   %{forgesource}
 
-BuildRequires:  meson
-BuildRequires:  blueprint-compiler
-BuildRequires:  pkgconfig(gtk4)
-BuildRequires:  pkgconfig(libadwaita-1) 
-BuildRequires:  pkgconfig(pygobject-3.0)
-BuildRequires:  pkgconfig(glib-2.0)
-BuildRequires:  desktop-file-utils
-BuildRequires:  libappstream-glib
-BuildRequires:  python3-devel
+BuildRequires: meson
+BuildRequires: gobject-introspection
+BuildRequires: desktop-file-utils
 
 Requires: gdm
 Requires: polkit
+Requires: libadwaita-devel
+Requires: glib2-devel
+Requires: pygobject3-devel
 Requires: gettext
 
 %description
