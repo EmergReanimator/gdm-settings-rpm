@@ -1,2 +1,2 @@
 # gdm-settings-rpm
-RPM for @realmazharhussain/gdm-settings 
+RPM for https://github.com/gdm-settings/gdm-settings
